@@ -1,0 +1,34 @@
+[
+    {
+        "value": "totalUsers",
+        "label": "Total Users"
+    },
+    {
+        "value": "newUsers",
+        "label": "New Users"
+    },
+    {
+        "value": "sessions",
+        "label": "Sessions"
+    },
+    {
+        "value": "bounceRate",
+        "label": "Bounce Rate"
+    },
+    {
+        "value": "userEngagementDuration",
+        "label": "User Engagement Duration"
+    },
+    {
+        "value": "averageSessionDuration",
+        "label": "Average Session Duration"
+    },
+    {
+        "value": "screenPageViews",
+        "label": "Page Views"
+    },
+    {
+        "value": "screenPageViewsPerSession",
+        "label": "Screen Page Views Per Session"
+    }
+]

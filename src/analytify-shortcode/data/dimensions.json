@@ -1,0 +1,38 @@
+[
+    {
+        "value": "",
+        "label": "CLEAR DIMENSIONS"
+    },
+    {
+        "value": "city",
+        "label": "City"
+    },
+    {
+        "value": "country",
+        "label": "Country"
+    },
+    {
+        "value": "firstUserSourceMedium",
+        "label": "First user source / medium"
+    },
+    {
+        "value": "fullPageUrl",
+        "label": "Full page URL"
+    },
+    {
+        "value": "pageLocation",
+        "label": "Page Location"
+    },
+    {
+        "value": "pagePath",
+        "label": "Page Path"
+    },
+    {
+        "value": "pageTitle",
+        "label": "Page Title"
+    },
+    {
+        "value": "sessionSourceMedium",
+        "label": "Session source / medium"
+    }
+]

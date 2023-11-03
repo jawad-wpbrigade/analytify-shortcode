@@ -1,0 +1,18 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-analytify-shortcode-analytify-shortcode {
+	border: 1px solid black;
+
+	.components-base-control {
+		padding: 14px !important;
+	}
+
+	.components-text-control__input {
+		height: 60px !important;
+		overflow-wrap: break-word;
+	}
+}
