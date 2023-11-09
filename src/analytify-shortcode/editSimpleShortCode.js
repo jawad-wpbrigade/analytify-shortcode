@@ -33,15 +33,13 @@ import{ useEffect, useRef } from '@wordpress/element';
 import './assets/editor.scss';
 
 /**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
+ * The EditSimpleShortCode will generate the simple shortcode for Analytify with 
+ * minimum controls available in control panel.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
  *
- * @param {Object}   props               Properties passed to the function.
  * @param {Object}   props.attributes    Available block attributes.
  * @param {Function} props.setAttributes Function that updates individual attributes.
- * @param {boolean}  props.isSelected    Boolean whether the block is selected in editor.
  *
  * @return {Element} Element to render.
  */

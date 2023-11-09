@@ -14,12 +14,15 @@ import {
 
 import { __ } from '@wordpress/i18n';
 
+// The metrics to show in inspector control dropdown
 import metrics from './data/metrics.json';
 
+// The dimensions to show in inspector control dropdown
 import dimensions from './data/dimensions.json';
 
 import sortOptions from './data/sortOptions.json';
 
+// Use the instance id to refer to the current active instance of block in editor.
 import { useInstanceId } from '@wordpress/compose';
 
 
@@ -40,15 +43,13 @@ import{ useEffect, useRef, useState } from '@wordpress/element';
 import './assets/editor.scss';
 
 /**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
+ * EditAdvanceShortCode component essentially make almost all the available attributes 
+ * for Analytify shortcode in the inspector sidebar of the block.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
  *
- * @param {Object}   props               Properties passed to the function.
  * @param {Object}   props.attributes    Available block attributes.
  * @param {Function} props.setAttributes Function that updates individual attributes.
- * @param {boolean}  props.isSelected    Boolean whether the block is selected in editor.
  *
  * @return {Element} Element to render.
  */
@@ -66,7 +67,12 @@ export default function EditAdvanceShortCode( { attributes, setAttributes } ) {
     const [ startDate, setStartDate ] = useState( '' );
 
     const [ endDate, setEndDate ]     = useState( '' );
-
+    
+    /**
+     * This is to avoid the shortcode building on first render
+     * instead we will show the predefined shortcode both on 
+     * the first render and in the preview.
+     */
     const isInitialMount = useRef(true);
 
     const instanceId = useInstanceId( EditAdvanceShortCode );

@@ -7,8 +7,8 @@ import EditAdvanceShortCode from './editAdvancedShortcode';
 import './assets/editor.scss';
 
 /**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
+ * The edit function checks the variation type of block and renders the component
+ * based on that variation.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
  *

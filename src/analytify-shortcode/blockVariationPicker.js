@@ -4,8 +4,14 @@ import {
 	useBlockProps
 } from '@wordpress/block-editor';
 
+// Block store contains information about the block.
 import { store as blocksStore } from '@wordpress/blocks';
 
+
+/**
+ * Analytify BlockVariationPicker helps to present user with initial option to 
+ * choose the simple version of block or the advanced version of the block.
+ */
 export const AnalytifyBlockVariationPicker = ( {name: blockName, setAttributes} ) => {
 
     const { blockType, defaultVariation, variations } = useSelect(

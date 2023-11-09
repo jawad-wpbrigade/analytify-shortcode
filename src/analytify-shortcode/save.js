@@ -4,9 +4,8 @@
 import { RawHTML } from '@wordpress/element';
 
 /**
- * The save function defines the way in which the different attributes should
- * be combined into the final markup, which is then serialized by the block
- * editor into `post_content`.
+ * save function just add the raw shortcode contents in the html
+ * after that we render the shortcode contents through our pro plugin.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save
  *
