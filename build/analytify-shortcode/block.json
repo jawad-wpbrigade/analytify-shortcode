@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "analytify/shortcodes",
+  "version": "1.0.0",
+  "title": "Analytify Shortcode",
+  "category": "widgets",
+  "description": "Analytify Shortcode block",
+  "attributes": {
+    "shortcode": {
+      "type": "string",
+      "default": "[analytify-stats metrics=\"screenPageViews\" date_type=\"- 1 days\" analytics_for=\"current\"]"
+    },
+    "selectedMetrics": {
+      "type": "array",
+      "default": [
+        "screenPageViews"
+      ]
+    },
+    "selectedDimensions": {
+      "type": "array"
+    },
+    "sortOption": {
+      "type": "string"
+    },
+    "selectedDate": {
+      "type": "string",
+      "default": "- 1 days"
+    },
+    "analyticsFor": {
+      "type": "string",
+      "default": "current"
+    },
+    "shortCodeType": {
+      "type": "string"
+    },
+    "post_id": {
+      "type": "string"
+    }
+  },
+  "example": {
+    "attributes": {
+      "shortcode": "[analytify-stats metrics=\"screenPageViews\" date_type=\"- 1 days\" analytics_for=\"current\"]",
+      "shortCodeType": "simple"
+    }
+  },
+  "textdomain": "analytify-shortcode",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

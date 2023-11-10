@@ -10,7 +10,7 @@ import { analytify } from './assets/icons';
 /** @typedef {import('@wordpress/blocks').WPBlockVariation} WPBlockVariation */
 
 /**
- * Template option choices for predefined columns layouts.
+ * Choices for predefined shortcode variations.
  *
  * @type {WPBlockVariation[]}
  */
